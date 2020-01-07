@@ -22,6 +22,8 @@ A list is a collection of vertically-arranged cards. They may represent a collec
 
 1. Add a list to a board by clicking the "Add a list" button next to the rightmost list on the board. You can also add a list by double-clicking any open space on the board.
 
+![Trello Add List](https://raw.github.com/elizabethlumban/checklist/master/02%20-%20Trello/addlist.png?raw=true "Trello Add List")
+
 ### Add Card
 
 1. Add cards for each task that needs to be completed by clicking “Add A Card” in the first list. Keep card titles short to make it easier to scan and see the status of each card on the board.
