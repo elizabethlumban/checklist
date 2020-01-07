@@ -36,6 +36,16 @@ A list is a collection of vertically-arranged cards. They may represent a collec
 * Attachments
 * Comments
 
+### Invite Members
+
+Invite members to your board so that they can be assigned to tasks and collaborate on your board. Click “Invite” in the board’s menu and select members of your team to add to your board, or invite members by their email address or name.
+
+Get an easy-to-share invite link to your board at the bottom of the Invite menu. Drop the special link in a chat room or email and anyone with the link will be able to join your board and start collaborating.
+
+![Trello Invite Members](https://raw.github.com/elizabethlumban/checklist/master/02%20-%20Trello/invitemembers.png?raw=true "Trello Invite Members")
+
+
+
 ### Reference
 1. [Trello 101](https://trello.com/guide/trello-101 "Trello Homepage")
 2. [Create A Board](https://trello.com/guide/create-a-board.html)
