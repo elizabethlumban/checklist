@@ -20,7 +20,8 @@ Boards are where projects get organized, information is shared, and great work h
 
 A list is a collection of vertically-arranged cards. They may represent a collection of ideas, things to remember, or different stages of a workflow.
 
-1. Add a list to a board by clicking the "Add a list..." button next to the rightmost list on the board. You can also add a list by double-clicking any open space on the board. ![Slack](https://raw.github.com/elizabethlumban/checklist/master/02%20-%20Trello/addlist.png?raw=true "Add List")
+1. Add a list to a board by clicking the "Add a list..." button next to the rightmost list on the board. You can also add a list by double-clicking any open space on the board.
+![Slack](https://raw.github.com/elizabethlumban/checklist/master/02%20-%20Trello/addlist.png?raw=true "Add List")
 
 ### Add Card
 
@@ -28,11 +29,11 @@ A list is a collection of vertically-arranged cards. They may represent a collec
 
 2. So that everyone has a clear understanding of what needs to get done, click on cards to add more information such as:
 
-  Due dates
-  Descriptions
-  Checklists
-  Attachments
-  Comments
+* Due dates
+* Descriptions
+* Checklists
+* Attachments
+* Comments
 
 ### Reference
 1. [Trello 101](https://trello.com/guide/trello-101 "Trello Homepage")
