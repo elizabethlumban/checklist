@@ -29,16 +29,17 @@ You typically obtain a Git repository in one of two ways:
 
 2. You can clone an existing Git repository from elsewhere.
 
-* Just open a terminal and type git clone https://github.com/ichabondcrane/front-end-app
+* Just open a terminal or command prompt and type ``` git clone https://github.com/ichabondcrane/front-end-app ```
+
 That creates a directory named front-end-app, initializes a .git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.
 
 ### How to commit your local changes
 
 To commit all your local change.
 
-* git add .  ``` This will select files under the current directory. Git will will grab all new or changed files ```
-* git commit -m "comment on the change done"
-* git push -u origin _branch name_
+* ``` git add .  ``` This will select files under the current directory. Git will will grab all new or changed files.
+* ``` git commit -m "comment on the change done" ```
+* ``` git push -u origin _branch name_ ```
 
 
 ### Reference
