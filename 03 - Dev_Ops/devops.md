@@ -10,7 +10,7 @@ Prerequisites:
 1. Login to your IBM Cloud Account.
 2. In the Dashboard, select DevOps and in the DevOps Toolchain click  ``` Create ToolChain```
 3. Then, in the next page select ``` Develop a Cloud Foundry App ```
-4. Specify the 'Toolchain' name, 'Select Region' set to  ' Dallas' (this depends on your account), just set 'default' in 'Select a resource group' in the 'Select a source provider' select 'Github'.
+4. Specify the ``` Toolchain ``` name,  ``` Select Region ``` set to  ' Dallas' (this depends on your account), just set 'default' in ``` Select a resource group ``` in the   ``` Select a source provider ``` select 'Github'.
 5. Under Tool Integrations> Github Tab.  GitHub Server: Github, Repository Type: Existing, Repository URL: https://github.com/ichabondcrane/front-end-app
 
 6. In the Delivery Pipeline tab, specify an App Name and Create the IBM Cloud API Key. Click on the New button next to the
@@ -26,7 +26,7 @@ Note: If this is your first time to set up Github in your IBM Cloud account, you
 
 7. After that, the toolchain will be created and you will need to allow IBM Cloud Toolchain to access your github repository. Please refer to this  [link](https://console.bluemix.net/docs/services/ContinuousDelivery/ts_index.html#ts_cd) for more information.
 
-8. Next, is to configure the Delivery Pipeline, click on the Delivery Pipeline Box. In the Build Stage, click on the Configure Stage, go to Input tab and just follow the values in the screenshot below. In this stage, we are specifying Github repository 
+8. Next, is to configure the ``` Delivery Pipeline ```, click on the Delivery Pipeline Box. In the Build Stage, click on the Configure Stage, go to Input tab and just follow the values in the screenshot below. In this stage, we are specifying Github repository 
 as the source of input for this stage and in this stage, the job will be automatically triggered when  a commit is pushed in the GIT repository. Then in the Jobs stage, we set the Builder type as npm and in the build script, we install the necessary modules and build it. This job will stop running if the install and the build fails.
 
 ![Build Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildinput.png?raw=true "Build Input")
@@ -46,8 +46,8 @@ as the source of input for this stage and in this stage, the job will be automat
 
 ![Toolchain](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/toolchain.png?raw=true "Toolchain")
 
-12. Once Deploy Stage is finished and passed, go to the Deploy Stage box and under the Last Execution Result, click on View Console under the application name, you will be routed to the application page itself (see screenshot) and from there click
-on Visit App URL link. 
+12. Once Deploy Stage is finished and passed, go to the Deploy Stage box and under the ``` Last Execution Result ```, click on View Console under the application name, you will be routed to the application page itself (see screenshot) and from there click
+on ``` Visit App URL ``` link. 
 
 ![Deploy Stage](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deploystage.png?raw=true "Deploy Stage")
 ![Toolchain Visit URL](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/visiturl.png?raw=true "Visit URL")
