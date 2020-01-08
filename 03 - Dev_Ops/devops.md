@@ -96,7 +96,7 @@ npm run test
 
 ![Toolchain](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/toolchain.png?raw=true "Toolchain")
 
-12. Once Deploy Stage is finished and passed, go to the Deploy Stage box and under the ``` Last Execution Result ```, click on View Console under the application name, you will be routed to the application page itself (see screenshot) and from there click
+12. Once Deploy Stage passed, go to the Deploy Stage box and under the ``` Last Execution Result ```, click on View Console under the application name, you will be routed to the application page itself (see screenshot) and from there click
 on [Visit App URL](http://front-end-app.mybluemix.net/) link.
 
 ![Deploy Stage](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deploystage.png?raw=true "Deploy Stage")
