@@ -26,38 +26,34 @@ Note: If this is your first time to set up Github in your IBM Cloud account, you
 
 7. After that, the toolchain will be created and you will need to allow IBM Cloud Toolchain to access your github repository. Please refer to this  [link](https://console.bluemix.net/docs/services/ContinuousDelivery/ts_index.html#ts_cd) for more information.
 
-8. Next, is to configure the Delivery Pipeline, click on the Delivery Pipeline Box. In the Build Stage, click on the configure, go to Jobs tab and then in the build script, use the following script and click on ``` Save ```. 
+8. Next, is to configure the Delivery Pipeline, click on the Delivery Pipeline Box. In the Build Stage, click on the Configure Stage, go to Input tab and just follow the values in the screenshot below. In this stage, we are specifying Github repository 
+as the source of input for this stage and in this stage, the job will be automatically triggered when  a commit is pushed in the GIT repository. Then in the Jobs stage, we set the Builder type as npm and in the build script, we install the necessary modules and build it. This job will stop running if the install and the build fails.
 
 ![Build Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildinput.png?raw=true "Build Input")
 ![Build Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildjobs.png?raw=true "Build Jobs")
 
-9. Then, create the Test Stage, by clicking on Add Stage button. Specify the following
+9. Next, is the Test Stage, click on the Configure Stage and just follow the values in the screenshot, in the Input tab, it will take its input from the previous stage, the Build Stage, and then in the Jobs tab, for this particular project we will need to install a few modules first and then it will execute the automated test.
 
 ![Test Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testinput.png?raw=true "Test Input")
 ![Test Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testjobs.png?raw=true "Test Jobs")
 
-10. Then,in the Deploy Stage, click Configure and in the Jobs tab, go to Deploy script and paste  ```node server.js ``` at the last line and click on ` Save `.
+10. Then,in the Deploy Stage, click Configure Stage and in the Input tab, just follow the screenshot below and then in the Jobs tab, all the fields should have been auto populated with these values from the screenshot except for the deploy script. The deploy script varies depending on what kind of application you are trying to deploy.
 
 ![Deploy Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deployinput.png?raw=true "Deploy Input")
 ![Deploy Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deployjobs.png?raw=true "Deploy Jobs")
 
-11. To test if the toolchain works, make a change in your local copy, push the code to your repository and wait for the toolchain to deploy it.
+11. We should be all set after this, and to test if the toolchain works, make a change at your local repository and then push it to github, it should trigger the Build stage.
 
-12. Once the application is up, go back to IBM Cloud Dashboard and go to Resources List and then select your app and open it. In the ``` Connect ``` Box, click on ```Create Connection ``` and then select the DB2 service you created earlier by clicking on the ``` Connect ``` button next to it. Once done, the application will be restaged.
+![Toolchain](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/toolchain.png?raw=true "Toolchain")
 
+12. Once Deploy Stage is finished and passed, go to the Deploy Stage box and under the Last Execution Result, click on View Console under the application name, you will be routed to the application page itself (see screenshot) and from there click
+on Visit App URL link. 
 
-
-16. In order to display the data correctly, the following files in the local repository needs to be modified, depending on the columns you want to display, make the change accordingly and push the code.
-
-``` text
-env.json (for your local testing only)
-app.component.ts
-app.component.html
-```
-
-17. Once the toolchain finished the deploy, go back to the toolchain dashboard and click on ``` Visit App URL ``` to view the app.
+![Deploy Stage](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deploystage.png?raw=true "Deploy Stage")
+![Toolchain Visit URL](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/visiturl.png?raw=true "Visit URL")
 
 
-###  Useful links:
+
+
+###  Reference:
 1. [Creating IBM Toolchains](https://cloud.ibm.com/docs/services/ContinuousDelivery?topic=ContinuousDelivery-toolchains_getting_started#toolchains_getting_started)
-2. [IBM DB2 on Cloud](https://www.ibm.com/sg-en/cloud/db2-on-cloud)
