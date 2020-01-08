@@ -24,8 +24,8 @@ You typically obtain a Git repository in one of two ways:
 * Create a local folder, for example: front-end-app
 * Open a terminal , then, go inside that folder by cd /front-end-app 
 * Then, type ``` git init ```. This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton.
-* git remote add origin https://github.com/ichabondcrane/front-end-app
-* git pull origin _branch name_
+* ``` git remote add origin https://github.com/ichabondcrane/front-end-app ```
+* ``` git pull origin master``` This will pull all the codes from the master branch.
 
 2. You can clone an existing Git repository from elsewhere.
 
@@ -39,7 +39,7 @@ To commit all your local change.
 
 * ``` git add .  ``` This will select files under the current directory. Git will will grab all new or changed files.
 * ``` git commit -m "comment on the change done" ```
-* ``` git push -u origin _branch name_ ```
+* ``` git push -u origin master ``` This will push the committed code in the master branch. Ideally, we would have several branches, depending on your project set up. 
 
 
 ### Reference
