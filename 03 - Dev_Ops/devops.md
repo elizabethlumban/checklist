@@ -31,7 +31,7 @@ Note: If this is your first time to set up Github in your IBM Cloud account, you
 7. After that, the toolchain will be created and you will need to allow IBM Cloud Toolchain to access your github repository. Please refer to this  [link](https://console.bluemix.net/docs/services/ContinuousDelivery/ts_index.html#ts_cd) for more information.
 
 8. Next, is to configure the ``` Delivery Pipeline ```, click on the Delivery Pipeline Box. In the Build Stage, click on the Configure Stage, go to Input tab and just follow the values in the screenshot below. In this stage, we are specifying Github repository 
-as the source of input for this stage and in this stage, the job will be automatically triggered when  a commit is pushed in the Github repository. Then in the Jobs tab, we set the ``` Builder type ``` as ``` npm ``` and in the Build script, we install the necessary modules and build it. This job will stop running if the install or the build fails.
+as the source of input for this stage and in this stage, the job will be automatically triggered when  a commit is pushed in the Github repository. Then, in the Jobs tab, we set the ``` Builder type ``` as ``` npm ``` and in the Build script, we install the necessary modules and build it. This job will stop running if the install or the build fails.
 
 ![Build Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildinput.png?raw=true "Build Input")
 ![Build Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildjobs.png?raw=true "Build Jobs")
@@ -40,6 +40,52 @@ as the source of input for this stage and in this stage, the job will be automat
 
 ![Test Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testinput.png?raw=true "Test Input")
 ![Test Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testjobs.png?raw=true "Test Jobs")
+
+Test script
+```
+sudo apt-get update
+sudo apt-get -yq install gconf-service
+sudo apt-get -yq install libasound2
+sudo apt-get -yq install libatk1.0-0
+sudo apt-get -yq install libatk-bridge2.0-0
+sudo apt-get -yq install libc6
+sudo apt-get -yq install libcairo2
+sudo apt-get -yq install libcups2
+sudo apt-get -yq install libdbus-1-3
+sudo apt-get -yq install libexpat1
+sudo apt-get -yq install libfontconfig1
+sudo apt-get -yq install libgcc1
+sudo apt-get -yq install libgconf-2-4
+sudo apt-get -yq install libgdk-pixbuf2.0-0
+sudo apt-get -yq install libglib2.0-0
+sudo apt-get -yq install libgtk-3-0
+sudo apt-get -yq install libnspr4
+sudo apt-get -yq install libpango-1.0-0
+sudo apt-get -yq install libpangocairo-1.0-0
+sudo apt-get -yq install libstdc++6
+sudo apt-get -yq install libx11-6
+sudo apt-get -yq install libx11-xcb1
+sudo apt-get -yq install libxcb1
+sudo apt-get -yq install libxcomposite1
+sudo apt-get -yq install libxcursor1
+sudo apt-get -yq install libxdamage1
+sudo apt-get -yq install libxext6
+sudo apt-get -yq install libxfixes3
+sudo apt-get -yq install libxi6
+sudo apt-get -yq install libxrandr2
+sudo apt-get -yq install libxrender1
+sudo apt-get -yq install libxss1
+sudo apt-get -yq install libxtst6
+sudo apt-get -yq install ca-certificates
+sudo apt-get -yq install fonts-liberation
+sudo apt-get -yq install libappindicator1
+sudo apt-get -yq install libnss3
+sudo apt-get -yq install lsb-release
+sudo apt-get -yq install xdg-utils
+sudo apt-get -yq install wget
+npm install 
+npm run test
+```
 
 10. Then, in the Deploy Stage, click Configure Stage and in the Input tab, just follow the screenshot below and then in the Jobs tab, all the fields should have been auto populated with these values from the screenshot except for the deploy script. The deploy script varies depending on what kind of application you are trying to deploy.
 
