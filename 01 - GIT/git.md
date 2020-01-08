@@ -25,7 +25,7 @@ You typically obtain a Git repository in one of two ways:
 * Open a terminal , then, go inside that folder by cd /front-end-app 
 * Then, type ``` git init ```. This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton.
 * git remote add origin https://github.com/ichabondcrane/front-end-app
-* git pull origin <branchane>> 
+* git pull origin _branch name_
 
 2. You can clone an existing Git repository from elsewhere.
 
@@ -34,7 +34,7 @@ That creates a directory named front-end-app, initializes a .git directory insid
 
 ### How to commit your local changes
 
-To commit all yoyour local change.
+To commit all your local change.
 
 * git add .  ``` This will select files under the current directory. Git will will grab all new or changed files ```
 * git commit -m "comment on the change done"
