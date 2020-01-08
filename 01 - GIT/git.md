@@ -31,7 +31,7 @@ You typically obtain a Git repository in one of two ways:
 
 * Just open a terminal or command prompt and type ``` git clone https://github.com/ichabondcrane/front-end-app ```
 
-That creates a directory named front-end-app, initializes a .git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.
+That creates a directory named ``` front-end-app ```, initializes a .git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.
 
 ### How to commit your local changes
 
