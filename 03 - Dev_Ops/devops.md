@@ -2,7 +2,7 @@ Prerequisites:
 
 1. Create an [IBM Public Cloud account](https://cloud.ibm.com/registration).
 2. You have an existing Github account and repository and project set up.
-3. We will create a toolchain based on this sample [application](https://github.com/elizabethlumban/front-end-app).
+3. We will create a toolchain based on this sample [application](https://github.com/ichabondcrane/front-end-app).
 
 
 ### Deploying the code to IBM Cloud
