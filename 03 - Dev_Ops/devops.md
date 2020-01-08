@@ -18,9 +18,9 @@ Prerequisites:
 * Repository URL: https://github.com/ichabondcrane/front-end-app
 
 6. In the Delivery Pipeline tab, specify an App Name and Create the IBM Cloud API Key. Click on the New button next to the
-IBM Cloud API Key field. A dialog box will be opened that will guide you on the API Key, take note the API Key and click
+IBM Cloud API Key field. A dialog box will be opened that will guide you on the API Key creation, take note the API Key and click
 ``` Create ```.  For the rest of the fields, I set it to the following values (this changes depending on your cloud account)
-and then click Create button on top of the form.
+and then click ``` Create ``` button on top of the form.
 
 * Region : Dallas
 * Organization: IBM Singapore Garage
