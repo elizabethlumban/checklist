@@ -28,7 +28,7 @@ and then click ``` Create ``` button on top of the form.
 
 Note: If this is your first time to set up Github in your IBM Cloud account, you will need to authorize IBM Cloud Toolchain to authorize your repository .
 
-7. After that, the toolchain will be created and you will need to allow IBM Cloud Toolchain to access your github repository. Please refer to this  [link](https://console.bluemix.net/docs/services/ContinuousDelivery/ts_index.html#ts_cd) for more information.
+7. After that, the toolchain will be created and you will need to allow IBM Cloud Toolchain to access your github repository.
 
 8. Next, is to configure the ``` Delivery Pipeline ```, click on the Delivery Pipeline Box. In the Build Stage, click on the Configure Stage, go to Input tab and just follow the values in the screenshot below. In this stage, we are specifying Github repository 
 as the source of input for this stage and in this stage, the job will be automatically triggered when  a commit is pushed in the Github repository. Then, in the Jobs tab, we set the ``` Builder type ``` as ``` npm ``` and in the Build script, we install the necessary modules and build it. This job will stop running if the install or the build fails.
