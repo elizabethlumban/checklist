@@ -31,12 +31,21 @@ Note: If this is your first time to set up Github in your IBM Cloud account, you
 ![Build Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildinput.png?raw=true "Build Input")
 ![Build Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/buildjobs.png?raw=true "Build Jobs")
 
+9. Then, create the Test Stage, by clicking on Add Stage button. Specify the following
 
-13. Then,in the Production Box, click Configure and in the Jobs tab, go to Deploy script and paste  ```node server.js ``` at the last line and click on ` Save `.
+![Test Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testinput.png?raw=true "Test Input")
+![Test Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/testjobs.png?raw=true "Test Jobs")
 
-14. To test if the toolchain works, make a change in your local copy, push the code to your repository and wait for the toolchain to deploy it.
+10. Then,in the Deploy Stage, click Configure and in the Jobs tab, go to Deploy script and paste  ```node server.js ``` at the last line and click on ` Save `.
 
-15. Once the application is up, go back to IBM Cloud Dashboard and go to Resources List and then select your app and open it. In the ``` Connect ``` Box, click on ```Create Connection ``` and then select the DB2 service you created earlier by clicking on the ``` Connect ``` button next to it. Once done, the application will be restaged.
+![Deploy Input](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deployinput.png?raw=true "Deploy Input")
+![Deploy Jobs](https://raw.github.com/elizabethlumban/checklist/master/03%20-%20Dev_Ops/deployjobs.png?raw=true "Deploy Jobs")
+
+11. To test if the toolchain works, make a change in your local copy, push the code to your repository and wait for the toolchain to deploy it.
+
+12. Once the application is up, go back to IBM Cloud Dashboard and go to Resources List and then select your app and open it. In the ``` Connect ``` Box, click on ```Create Connection ``` and then select the DB2 service you created earlier by clicking on the ``` Connect ``` button next to it. Once done, the application will be restaged.
+
+
 
 16. In order to display the data correctly, the following files in the local repository needs to be modified, depending on the columns you want to display, make the change accordingly and push the code.
 
