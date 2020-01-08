@@ -6,6 +6,13 @@
 4. Write a short description.
 5. Select **Initialize this repository with a README**.
 
+### Getting Started - Installing Git
+
+Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
+
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
 
 ### Reference
-[1. Github Guide](https://guides.github.com/activities/hello-world/ "Github Guide")
+1. [Github Guide](https://guides.github.com/activities/hello-world/ "Github Guide")
+2. [Trainings and Guides](https://www.youtube.com/githubguides)
